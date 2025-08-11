@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopEase - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo"><a href="index.html">ShopEase</a></div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-card">
+      <form onsubmit="event.preventDefault(); alert('Message sent! (demo)'); this.reset();">
+        <input required placeholder="Your name" />
+        <input required type="email" placeholder="Your email" />
+        <textarea required rows="5" placeholder="Your message"></textarea>
+        <div style="text-align:right"><button class="btn btn-primary" type="submit">Send</button></div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">© 2025 ShopEase</footer>
+  <script src="script.js"></script>
+</body>
+</html>
